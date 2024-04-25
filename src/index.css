@@ -1,13 +1,87 @@
+/* App.css */
+
+/* Fuente y colores */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Orbitron', monospace;
+  background-color: #0d0d0d;
+  color: #7df9ff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+  text-shadow: 0 0 10px #7df9ff, 0 0 20px #7df9ff, 0 0 30px #7df9ff;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: auto;
+  max-height: auto;
+  margin: 0 auto;
+  padding: 5rem;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(125, 249, 255, 0.5);
+}
+
+/* Campos de entrada */
+.input-field {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid #7df9ff;
+  border-radius: 5px;
+  background-color: #262626;
+  color: #7df9ff;
+  font-size: 1.2rem;
+  font-family: 'Orbitron', monospace;
+}
+
+.input-field:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(125, 249, 255, 0.5);
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #7df9ff;
+  color: #0d0d0d;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-family: 'Orbitron', monospace;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px rgba(125, 249, 255, 0.5);
+}
+
+/* Lista de tareas */
+.task-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #262626;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(125, 249, 255, 0.2);
+}
+
+.task-image {
+  max-width: 100px;
+  margin-right: 1rem;
+  border-radius: 5px;
 }
