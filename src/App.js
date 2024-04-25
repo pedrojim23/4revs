@@ -49,7 +49,7 @@ function App() {
 
   return (
     <div className="container"> {/* Le aplicamos una clase CSS al contenedor principal */}
-      <h1>Lista de Tareas</h1>
+      <h1>Lista de Tareas 2</h1>
       <input
         type="text"
         value={newTask}
